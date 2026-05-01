@@ -75,3 +75,39 @@ int main(){
     cout << sum;
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    string dayornight;
+    bool motiondetected;
+    
+    cout<<"is Day or Night : ";
+    cin>>dayornight;
+    
+    cout<<"is motion detected (1 for yes, 0 for no) : ";
+    cin>>motiondetected;
+    
+    if(dayornight == "Night" || dayornight == "night"){
+        if(motiondetected){
+            cout<<"Turn on the lights with 100%";
+        }else{
+            cout<<"Turn on the lights with 10%";
+        }
+    }else{
+        cout<<"Now is Day then off the lights";
+    }
+    return 0;
+}
